@@ -1,0 +1,26 @@
+.card-list {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #35302c;
+    font-size: 24px;    
+    color: #504a46;    
+    .left {
+      p:first-child {
+        color: #fff;
+        margin-bottom: 6px; 
+        font-size: 30px;
+      }
+    }
+    .count {
+      span {
+        color: #fff;
+        font-size: 36px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

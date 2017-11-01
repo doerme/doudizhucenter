@@ -1,0 +1,110 @@
+.v-dialog {
+  position: fixed;
+  display: none;
+  left: 0;top:0;right:0;bottom:0;
+  background-color: rgba(0,0,0,.5);
+  .dialog-content {
+    position: absolute;
+    width: 650px;
+    height: 580px;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #24201d;
+    padding: 0 30px;
+    h3 {
+      line-height: 130px;
+      text-align: center;
+      font-size: 32px;
+    }
+    .close-btn {
+      position: absolute;
+      top: 42px;
+      right: 30px;
+      width: 40px;
+      height: 40px;
+      background: url('../../../../img/dialog-close-icon.png') no-repeat center right;
+      background-size: 26px 26px;
+    }
+    .input-wrapper {
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      input {
+        width: 100%;
+        height: 88px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        font-size: 28px;
+        padding-left: 30px;
+        color: #333;
+      }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #b2b2b2;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: #b2b2b2;
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: #b2b2b2;
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #b2b2b2;
+      }
+    }
+    .phone-input {
+      position: relative;
+      input {
+        padding-right: 190px;
+      }
+      a {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        color: #e68300;
+        width: 160px;
+        text-align: center;
+        line-height: 88px;
+        font-size: 28px;
+      }
+    }
+    .img-input {
+      position: relative;
+      input {
+        padding-right: 190px;
+      }
+      img {
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 0;
+        width: 160px;
+        height: 100%;
+      }
+    }
+    .btn-wrapper {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 110px;
+      background: #f0f0f0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .bind-btn {
+        width: 360px;
+        height: 80px;
+      }
+    }
+  }
+}

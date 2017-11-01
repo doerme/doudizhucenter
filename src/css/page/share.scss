@@ -1,0 +1,89 @@
+
+.container {
+  background: url('../../img/roomcard-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.content {
+  width: 560px;
+  height: 732px;
+  box-sizing: border-box;
+  background: url('../../img/dialog-card-bg.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+  .avatar {
+    width: 110px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+  .open {
+    p {
+      color: #ffa7a7;
+    }
+    .nickname {
+      margin-top: 120px;
+      font-size: 32px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .recieve-btn {
+      margin-top: 54px;
+      display: inline-block;
+      color: #de2727;
+      font-size: 48px;
+      width: 202px;
+      line-height: 202px;
+      background: url('../../img/recieve-btn-bg.png') no-repeat;
+      background-size: cover;
+    }
+  }
+  .opened {
+    color: #fdca00;      
+    .checkbox {
+      width: 175px;
+      height: 175px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+    .result {
+      position: absolute;
+      bottom: 50px;
+      left: 30px;
+      right: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+      text-align: left;
+      .left {
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: 80px;
+          border: 2px solid #fff;
+          border-radius: 8px;
+          margin-right: 16px;
+        }
+        .info {
+          p:last-child {
+            font-size: 24px;
+            color: #ff6161;
+            margin-top: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.opened {
+  display: none;
+}

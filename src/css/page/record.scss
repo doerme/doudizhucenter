@@ -1,0 +1,120 @@
+.status-list {
+  background: #443423;
+  display: flex;
+  align-items: center;
+  .status-item {
+    flex: 1;
+    line-height: 80px;
+    text-align: center;
+    color: #615d5a;
+    font-size: 30px;
+    &.selected {
+      color: #fff;
+      position: relative;
+      &:after {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        content: '';
+        width: 80px;
+        height: 6px;
+        border-radius: 3px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+.game-list {
+  .game-item {
+    position: relative;
+    margin: 20px 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    padding: 0 30px;
+    color: #333;
+    i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 90px;
+      height: 70px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-top-right-radius: 10px;
+      &.end {
+        background-image: url('../../img/game-end-status.png');
+      }
+      &.cancel {
+        background-image: url('../../img/game-cancel-status.png');
+      }
+    }
+    .header {
+      height: 90px;
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #e6e6e6;
+      img {
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      span {
+        margin-right: 8px;
+      }
+    }
+    .middle {
+      display: flex;
+      padding: 20px;
+      img {
+        width: 120px;
+        height: 120px;
+        margin-right: 44px;
+      }
+      p {
+        line-height: 1;
+        margin-bottom: 8px;
+        font-size: 24px;
+        span:first-child {
+          display: inline-block;
+          text-align: right;
+          width: 100px;
+        }
+        span:last-child {
+          color: #808080;
+          margin-left: 16px;
+        }
+      }
+      .title {
+        color: #24201d;
+        font-size: 34px;
+        font-weight: 500px;
+        margin-bottom: 14px;
+      }
+    }
+    .footer {
+      border-top: 1px solid #e6e6e6;      
+      display: flex;  
+      justify-content: space-between;
+      align-items: center;
+      color: #a8a8a8;
+      font-size: 24px;
+      padding: 10px 0;
+      ul {
+        li {
+          display: inline-block;
+          img {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>王小明的斗地主局</title>
+  <meta charset="utf-8">
+  <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+  <script>
+    !function(a,b){function c(){var b=f.getBoundingClientRect().width;b/i>540&&(b=540*i);var c=b/10;f.style.fontSize=c+"px",k.rem=a.rem=c}var d,e=a.document,f=e.documentElement,g=e.querySelector('meta[name="viewport"]'),h=e.querySelector('meta[name="flexible"]'),i=0,j=0,k=b.flexible||(b.flexible={});if(g){console.warn("将根据已有的meta标签来设置缩放比例");var l=g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);l&&(j=parseFloat(l[1]),i=parseInt(1/j))}else if(h){var m=h.getAttribute("content");if(m){var n=m.match(/initial\-dpr=([\d\.]+)/),o=m.match(/maximum\-dpr=([\d\.]+)/);n&&(i=parseFloat(n[1]),j=parseFloat((1/i).toFixed(2))),o&&(i=parseFloat(o[1]),j=parseFloat((1/i).toFixed(2)))}}if(!i&&!j){var p=(a.navigator.appVersion.match(/android/gi),a.navigator.appVersion.match(/iphone/gi)),q=a.devicePixelRatio;i=p?q>=3&&(!i||i>=3)?3:q>=2&&(!i||i>=2)?2:1:1,j=1/i}if(f.setAttribute("data-dpr",i),!g)if(g=e.createElement("meta"),g.setAttribute("name","viewport"),g.setAttribute("content","initial-scale="+j+", maximum-scale="+j+", minimum-scale="+j+", user-scalable=no"),f.firstElementChild)f.firstElementChild.appendChild(g);else{var r=e.createElement("div");r.appendChild(g),e.write(r.innerHTML)}a.addEventListener("resize",function(){clearTimeout(d),d=setTimeout(c,300)},!1),a.addEventListener("pageshow",function(a){a.persisted&&(clearTimeout(d),d=setTimeout(c,300))},!1),"complete"===e.readyState?e.body.style.fontSize=12*i+"px":e.addEventListener("DOMContentLoaded",function(){e.body.style.fontSize=12*i+"px"},!1),c(),k.dpr=a.dpr=i,k.refreshRem=c,k.rem2px=function(a){var b=parseFloat(a)*this.rem;return"string"==typeof a&&a.match(/rem$/)&&(b+="px"),b},k.px2rem=function(a){var b=parseFloat(a)/this.rem;return"string"==typeof a&&a.match(/px$/)&&(b+="rem"),b}}(window,window.lib||(window.lib={}));
+  </script> 
+</head>
+<body>
+	<div class="container">
+    <div class="content">
+      <div class="header">
+        <div class="game-pannel">
+          <div class="game-status">
+            <img src="/src/img/mask.png" alt="">
+            <p>已结束</p>
+          </div>
+          <div class="game-info">
+            <p class="title">王小明的斗地主局</p>
+            <p><span>开始时间</span><span>10月12日 15:20</span></p>
+            <p><span>游戏模式</span><span>癞子玩法</span></p>
+            <p><span>低分</span><span>1</span></p>
+            <p><span>盘数</span><span>4盘</span></p>            
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="javascript:;">查看详情</a>
+          <a href="javascript:;">再来一局</a>
+        </div>
+      </div>
+      <div class="users-info">
+        <div class="pannel profit-and-lost">
+          <h3>盈亏关系</h3>
+          <div class="pl-row">
+            <div class="pl-item">
+              <img src="/src/img/default-avatar.png" alt=""><span>菜头</span>
+            </div>
+            <div class="pl-item to">
+              <img src="/src/img/default-avatar.png" alt=""><span>菜头</span>
+            </div>
+            <div class="money">
+              <span>12</span>
+              <i></i>
+            </div>
+          </div>
+          <div class="pl-row"></div>
+        </div>
+        <div class="pannel game-sponser">
+          <h3>组局者</h3>
+          <div class="user-item sponser-item">
+            <div class="user-avatar">
+                <img src="/src/img/default-avatar.png" alt="">
+                <p>冠军</p>
+            </div>
+            <div class="user-nickname">
+              <p>L.G.T</p>
+              <p>6</p>
+            </div>
+          </div>
+        </div>
+        <div class="pannel">
+          <h3>参与者</h3>
+          <div class="game-participant">
+              <div class="user-item participant-item">
+                  <div class="user-avatar">
+                      <img src="/src/img/default-avatar.png" alt="">
+                      <p>冠军</p>
+                  </div>
+                  <div class="user-nickname">
+                    <p>L.G.T</p>
+                    <p>6</p>
+                  </div>
+              </div>
+              <div class="user-item participant-item">
+                  <div class="user-avatar">
+                      <img src="/src/img/default-avatar.png" alt="">
+                      <p>冠军</p>
+                  </div>
+                  <div class="user-nickname">
+                    <p>L.G.T</p>
+                    <p>6</p>
+                  </div>
+              </div>
+              <div class="user-item participant-item">
+                  <div class="user-avatar">
+                      <img src="/src/img/default-avatar.png" alt="">
+                      <p>冠军</p>
+                  </div>
+                  <div class="user-nickname">
+                    <p>L.G.T</p>
+                    <p>6</p>
+                  </div>
+              </div>
+              <div class="user-item participant-item">
+                  <div class="user-avatar">
+                      <img src="/src/img/default-avatar.png" alt="">
+                      <p>冠军</p>
+                  </div>
+                  <div class="user-nickname">
+                    <p>L.G.T</p>
+                    <p>6</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <img src="/src/img/qr-icon.png" alt="">
+        <div>
+          <p>长按左侧图片，识别二维码</p>
+          <p>关注”小妖会馆”公众号</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>

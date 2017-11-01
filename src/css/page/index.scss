@@ -1,0 +1,95 @@
+.header {
+  background: #443423;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 30px;
+  height: 120px;
+  .userinfo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 90px;
+      height: 90px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      margin-right: 10px;
+    } 
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .nickname {
+        font-size: 32px;
+        margin-bottom: 8px;
+      }
+      span {
+        display: inline-block;
+        width: 165px;
+        height: 32px;
+        background-size: cover;
+        background-repeat:  no-repeat;
+        text-align: right;
+        box-sizing: border-box;
+        padding-left: 50px;
+        padding-right: 16px;
+        margin-right: 32px;
+      }
+      .card {
+        background-image: url('../../img/card-bg.png');
+      }
+      .diamond {
+        background-image: url('../../img/diamond-bg.png');        
+      }
+    }
+  }
+  .phone {
+    width:80px ;
+    height: 100%;
+    background: url('../../img/phone-icon.png') no-repeat center right;
+    background-size: 38px 40px;
+    &.verified {
+      background-image: url('../../img/orange-phone-icon.png');
+    }
+  }
+}
+.game-list {
+  li {
+    position: relative;
+    margin: 20px 30px 0;
+    background: url('../../img/ddz-game.png') no-repeat;
+    background-size: cover;
+    width: 690px;
+    height: 320px;
+    font-size: 26px;
+    border-radius: 12px;
+    .game-info {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      p {
+        color: #24201d;    
+        margin-bottom: 10px;
+      }
+      a {
+        display: inline-block;
+        background-color: #205bd3;
+        color: #fff;
+        border-radius: 8px;
+        padding: 16px 10px 16px 50px ;
+        margin-right: 16px;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+      }
+      .friend {
+        background-image: url('../../img/cards.png');
+        background-size: 33px 30px;
+      }
+      .passer {
+        background-image: url('../../img/peoples.png');
+        background-size: 27px 27px;
+      }
+    }
+  }
+}

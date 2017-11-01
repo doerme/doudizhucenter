@@ -1,0 +1,82 @@
+.record-item {
+  display: flex;
+  .left {
+    width: 210px;
+    border-right: 2px solid #3c3632;
+    position: relative;
+    div {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      background: #2e2a27;
+      height: 90px;
+      border-top-right-radius: 45px;
+      border-bottom-right-radius: 45px;
+      padding: 0 40px;
+      color: #e68300;
+      p:last-child {
+        font-size: 24px;
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      right: -31px;
+      top: 45px;
+      width: 63px;
+      height: 62px;
+      background: url('../../img/clock-icon.png') no-repeat;
+      background-size: cover;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+  }
+  .record-section {
+    flex: 1;
+    margin-left: 30px;
+    border-bottom: 2px solid #3c3632;       
+  }
+  .record-detail {
+    display: flex;
+    margin: 30px; 
+    margin-left: 0;
+    justify-content: space-between;
+    align-items: center;
+    .user-info {
+      display: flex;
+      align-items: center;
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      p {
+        color: #857d76;
+        font-size: 24px;
+      }
+      .nickname {
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+    .money {
+      color: #e68300;
+      line-height: 30px;
+      position: relative;
+      &:before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        left: -40px;
+        width: 40px;
+        height: 30px;
+        background: url('../../img/money-icon.png') no-repeat left;
+        background-size: 30px 30px;
+      }
+    }
+  }
+}

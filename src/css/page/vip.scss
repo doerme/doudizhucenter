@@ -1,0 +1,54 @@
+.content {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vip-welfare {
+  width: 436px;
+  height: 266px;
+  background: url('../../img/welfare-bg.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  p {
+    color: #e68300;
+    position: absolute;
+    text-align: center;
+    width: 100%;    
+  }
+  p:first-child {
+    line-height: 180px;
+    font-size: 42px;
+  }
+  p:last-child {
+    top: 180px;
+    line-height: 86px;
+  }
+}
+
+.checkbox {
+  font-size: 24px;
+  line-height: 30px;
+  padding-left: 50px;
+  position: relative;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  &.checked {
+    &:before {
+      background-image: url('../../img/check-icon.png');
+      background-repeat: no-repeat;
+      background-size: 24px 24px;
+      background-position: center;
+    }
+  }
+}

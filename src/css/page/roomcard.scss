@@ -1,0 +1,64 @@
+.container {
+  background: url('../../img/roomcard-bg.png') no-repeat;
+  background-size: cover;
+}
+
+.top {
+  padding: 30px;
+  color: #e68300;
+  .input-wrapper {
+    color: #1a1a1a;
+    padding: 0 30px;
+    margin-top: 20px;
+    height: 90px;
+    border-radius: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .right {
+      height: 100%;
+    }
+    .card-input {
+      margin-right: 10px;
+      font-size: 28px;
+      width: 100px; 
+      height: 100%;
+      color: #1a1a1a;
+      text-align: right;
+      &:focus {
+        text-align: left;
+      }
+    }
+  }
+  .input-num {
+    text-align: center;
+    line-height: 210px;
+    font-size: 32px;
+    span {
+      font-size: 64px;
+      margin-right: 10px;
+    }
+  }
+  .create-btn {
+    display: inline-block;
+    margin-left: 45px;
+    width: 600px;
+    line-height: 90px;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 45px;
+    background: -webkit-linear-gradient(left,#e68100, #f5b200);
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  text-align: center;
+  a {
+    color: #498bed;    
+  }
+}
