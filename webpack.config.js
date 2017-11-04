@@ -21,7 +21,8 @@ module.exports = {
     cardhistory: './src/js/page/cardhistory.js',
     entrance: './src/js/page/entrance.js',
     gameover: './src/js/page/gameover.js',
-    detail: './src/js/page/detail.js'
+    detail: './src/js/page/detail.js',
+    reg: './src/js/page/reg.js',
   },
   output: {
     path: path.join(__dirname, 'dist'), // 输出目录的配置，模板、样式、脚本、图片等资源的路径配置都相对于它
@@ -117,22 +118,46 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       // favicon: './src/img/favicon.ico', 
-      filename: './vip.html', 
+      filename: './vip.html',
       template: './src/view/vip.html',
-      inject: true, 
-      hash: true, 
+      inject: true,
+      hash: true,
       chunks: ['vendors', 'vip'], 
       minify: {
         removeComments: true, 
         collapseWhitespace: false
       }
     }),
-    new HtmlWebpackPlugin({ 
+    new HtmlWebpackPlugin({
+      // favicon: './src/img/favicon.ico', 
+      filename: './reg.html',
+      template: './src/view/reg.html',
+      inject: true,
+      hash: true,
+      chunks: ['vendors', 'reg'], 
+      minify: {
+        removeComments: true, 
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
+      // favicon: './src/img/favicon.ico', 
+      filename: './vip.html',
+      template: './src/view/vip.html',
+      inject: true,
+      hash: true,
+      chunks: ['vendors', 'vip'], 
+      minify: {
+        removeComments: true, 
+        collapseWhitespace: false
+      }
+    }),
+    new HtmlWebpackPlugin({
       // favicon: './src/img/favicon.ico', 
       filename: './entrance.html', 
       template: './src/view/entrance.html', 
-      inject: true, 
-      hash: true, 
+      inject: true,
+      hash: true,
       chunks: ['vendors', 'entrance'], 
       minify: {
         removeComments: true, 

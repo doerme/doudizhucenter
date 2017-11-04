@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>房卡包</title>
+	<title>忘记密码</title>
   <meta charset="utf-8">
   <meta name="flexible" content="initial-dpr=2,maximum-dpr=3" />  
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
@@ -10,64 +10,19 @@
   </script> 
 </head>
 <body>
-	<div class="container">
-    <div class="top">
-      <p class="card-num">你的房卡：<span class="js-total-card">20</span>张</p>
-      <div class="input-wrapper">
-        <p>放入房卡</p>
-        <div class="right">
-          <input class="card-input" value="0" type="number"><span>张</span>
-        </div>
-      </div>
-      <p class="input-num"><span class="js-input-num">0</span>张</p>
-      <a class="create-btn" href="javascript:;">制作房卡</a>
-    </div>
-    <div class="bottom">
-      <a href="/cardhistory.html">我的房卡记录</a>
-    </div>
-  </div>
-  <div class="dialog dialog-card">
-    <div class="mask"></div>
-    <div class="content">
-      <img class="avatar" src="/src/img/default-avatar.png" alt="">
-      <div class="open">
-          <p class="nickname">王小明</p>
-          <p>给你发了一个房卡宝</p>
-          <a href="javascript:;" class="recieve-btn">领取</a>
-      </div>
-      <div class="opened">
-          <img class="checkbox" src="/src/img/checkbox.png" >
-          <p>已领取王小明的房卡包</p>
-          <div class="result">
-            <div class="left">
-              <img src="/src/img/default-avatar.png" alt="">
-              <div class="info">
-                <p>王小明</p>
-                <p>10-18 23:09</p>
-              </div>
+    <div class="container">
+        <div class="content">
+            <div class="login-wrap js-login-wrap hide">
+                <div class="input-wrap">
+                    <input class="form-input js-login-mob" type="tel" placeholder="输入手机号" />
+                    <input class="form-input js-login-pwd" type="text" placeholder="输入密码" />
+                    <div class="bt-wrap">
+                        <img class="login-bt js-login-bt" src="./img/page/login/login-bt.png" />
+                        <img class="reg-bt js-reg-bt" src="./img/page/login/reg-bt.png" />
+                    </div>
+                </div>
             </div>
-            <p class="recieve-num">10张房卡</p>
-          </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="dialog dialog-card opened">
-      <div class="mask"></div>
-      <div class="content">
-        <img class="avatar" src="/src/img/default-avatar.png" alt="">
-        <img src="" alt="">
-        <p>已领取王小明的房卡包</p>
-        <div class="result">
-          <div class="left">
-            <img src="" alt="">
-            <div class="info">
-              <p>王小明</p>
-              <p>10-18 23:09</p>
-            </div>
-          </div>
-          <p class="recieve-num">10张房卡</p>
         </div>
-      </div>
-  </div> -->
+    </div>
 </body>
 </html>
